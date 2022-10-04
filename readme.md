@@ -10,7 +10,7 @@ This is a part of the implementation for Test Driven Development. <br /> Teams o
 Driver - Vishaal KannaSivakumar <br />
 Navigator -  Rishabh Singh <br />
 
-## Author Names Team 1
+## Author Names Team 1(Part 2)
 Driver - Sanchit Kedia <br />
 Navigator -  Adarsh Malapaka <br />
 
