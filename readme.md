@@ -22,6 +22,7 @@ cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../ <br />
 make <br />
 make code_coverage <br />
 
+[![Build Status](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2.svg?branch=main)](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2)
 
 
 
