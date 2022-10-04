@@ -26,9 +26,9 @@ TEST(test1, checking_PID_constants) {
   controller.setKi(0.1);
   controller.setTstep(0.1);
   ASSERT_DOUBLE_EQ(controller.getKp(), 0.4);
-  ASSERT_DOUBLE_EQ(controller.getKd(), 0.2);
+  ASSERT_DOUBLE_EQ(controller.getKd(), 0.3);
   ASSERT_DOUBLE_EQ(controller.getKi(), 0.1);
-  ASSERT_DOUBLE_EQ(controller.getTstep(), 0.1);
+  ASSERT_FLOAT_EQ(controller.getTstep(), 0.1);
 }
 
 /**
