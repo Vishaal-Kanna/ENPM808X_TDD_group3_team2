@@ -33,8 +33,8 @@ class PID {
   /**
    * @brief Get the value of Kp constant
    *
-   * @param val
-   * @return void
+   * @param None
+   * @return double
    */
   double getKp();
 
@@ -49,8 +49,8 @@ class PID {
   /**
    * @brief Get the value of Ki constant
    *
-   * @param val
-   * @return void
+   * @param None
+   * @return double
    */
   double getKi();
 
@@ -65,8 +65,8 @@ class PID {
   /**
    * @brief Get the value of Kd constant
    *
-   * @param val
-   * @return void
+   * @param None
+   * @return double
    */
   double getKd();
 
@@ -81,11 +81,10 @@ class PID {
   /**
    * @brief Get the value of Time step
    *
-   * @param val
-   * @return void
+   * @param None
+   * @return float
    */
   float getTstep();
-
 
   /**
    * @brief Method to compute the new acceleration
@@ -97,9 +96,9 @@ class PID {
   double computeVelocity(double V_target, double V_current);
 
  private:
-  double Kp; ///< Proportional constant
-  double Ki; ///< Derivative constant
-  double Kd; ///< Integral constant
-  float tstep; ///< Time step
+  double _Kp; ///< Proportional constant
+  double _Ki; ///< Derivative constant
+  double _Kd; ///< Integral constant
+  float _tstep; ///< Time step
 };
 }  // namespace pid

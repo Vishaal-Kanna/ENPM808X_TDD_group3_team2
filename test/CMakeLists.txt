@@ -4,6 +4,7 @@ add_executable(
     cpp-test
     main.cpp
     test.cpp
+    ../app/pid.cpp
 )
 
 target_link_libraries(cpp-test PUBLIC gtest)

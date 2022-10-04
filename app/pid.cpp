@@ -14,42 +14,42 @@
 
  void pid::PID::setKp(double val)
  {
-    Kp = val;
+    _Kp = val;
  }
 
  double pid::PID::getKp()
  {
-    return Kp;
+    return -1;
  }
 
  void pid::PID::setKd(double val)
  {
-    Kd = val;
+    _Kd = val;
  }
 
  double pid::PID::getKd()
  {
-    return Kd;
+    return -1;
  }
 
  void pid::PID::setKi(double val)
  {
-    Ki = val;
+    _Ki = val;
  }
 
  double pid::PID::getKi()
  {
-    return Ki;
+    return -1;
  }
 
  void pid::PID::setTstep(float val)
  {
-    tstep = val;
+    _tstep = val;
  }
 
 float pid::PID::getTstep()
  {
-    return tstep;
+    return -1;
  }
 
  double pid::PID::computeVelocity(double V_target, double V_current)
