@@ -51,6 +51,6 @@ TEST(test2, checking_compute_Controller_Command_method) {
  */
 TEST(test1, checking_Time_step) {
   pid::PID controller;
-  controller.setTstep(-1);
+  controller.setTstep(0.1);
   ASSERT_FLOAT_EQ(controller.getTstep(), 0.1);
 }
