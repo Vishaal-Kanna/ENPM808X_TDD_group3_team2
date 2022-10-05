@@ -52,7 +52,7 @@ float pid::PID::getTstep()
     return -1;
  }
 
- double pid::PID::computeVelocity(double V_target, double V_current)
+ double pid::PID::computeCommand(double V_target, double V_current, double total_error)
  {
-    return 3.5;
+   return 3.5;
  }
