@@ -23,6 +23,20 @@ namespace pid {
 class PID {
  public:
   /**
+   * @brief Default constructor for class PID
+   *
+   * @param None
+   * @return None
+   */
+  PID() {
+    _Kp = 0;
+    _Ki = 0;
+    _Kd = 0;
+    _tstep = 0;
+    _prev_error = 0;
+  }
+
+  /**
    * @brief Set the value of Kp constant
    *
    * @param val
@@ -96,10 +110,10 @@ class PID {
   double computeCommand(double V_target, double V_current, double total_error);
 
  private:
-  double _Kp; ///< Proportional constant
-  double _Ki; ///< Derivative constant
-  double _Kd; ///< Integral constant
-  float _tstep; ///< Time step
-  double _prev_error=0; ///< Integral constant
+  double _Kp;          ///< Proportional constant
+  double _Ki;          ///< Derivative constant
+  double _Kd;          ///< Integral constant
+  float _tstep;        ///< Time step
+  double _prev_error;  ///< Integral constant
 };
 }  // namespace pid
