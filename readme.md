@@ -31,6 +31,12 @@ cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../ <br />
 make <br />
 make code_coverage <br />
 
-
-
+## Notes and TODO
+Upon discussion the following future changes/suggestions were agreed upon:<br />
+1. Include an Activity UML diagram.<br />
+2. Add More Test cases for the computeCommand function.<br />
+3. Test3 to check time step is redundant since there is no user input to set the value as negative.<br />
+4. The error threshold for convergence of the PID loop is currently set to 0.1, consider reducing this value.<br />
+5. Consider replacing pragma once with #ifndef guards in pid.hpp.<br />
+6. _tstep can be lumped into the Ki and Kd gains.<br />
 
