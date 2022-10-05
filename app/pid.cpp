@@ -1,6 +1,7 @@
 /**
  * @file pid.cpp
  * @authors Rishabh Singh, Vishaal Kanna Sivakumar
+ * @authors Part 2: Sanchit Kedia, Adarsh Malapaka
  * @brief Stub class for the PID controller
  * @version 0.1
  * @date 2022-10-02
@@ -51,17 +52,11 @@ double pid::PID::computeVelocity(double V_target, double V_current) {
   double sum_error = 0.0;
   double feedback = 0.0;
 
-  while (std::abs(error) > 0.1) {
-    error = V_target - V_current;
-
-    sum_error += error;
-
-    double p = _Kp * error;
-    double i = _Ki * sum_error * _tstep;
-    double d = _Kd * (error - previous_error) / _tstep;
-    feedback = p + i + d;
-    V_current = feedback * _tstep;
-    previous_error = error;
-  }
+  error = V_target - V_current;
+  sum_error += error;
+  double p = _Kp * error;
+  double i = _Ki * sum_error * _tstep;
+  double d = _Kd * (error - previous_error) / _tstep;
+  feedback = p + i + d;
   return feedback;
 }
