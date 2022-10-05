@@ -27,7 +27,13 @@ void pid::PID::setKi(double val) { _Ki = val; }
 
 double pid::PID::getKi() { return _Ki; }
 
-void pid::PID::setTstep(float val) { _tstep = val; }
+void pid::PID::setTstep(float val) {
+  if (val > 0) {
+    _tstep = val;
+  } else {
+    _tstep = 0.1;
+  }
+}
 
 float pid::PID::getTstep() { return _tstep; }
 

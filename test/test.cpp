@@ -49,8 +49,8 @@ TEST(test2, checking_compute_Controller_Command_method) {
  * @brief Test to check if the time step value is assigned to 0.1 if the input 
  * is lesser than or equal to zero.
  */
-TEST(test1, checking_Time_step) {
+TEST(test3, checking_Time_step) {
   pid::PID controller;
-  controller.setTstep(0.1);
+  controller.setTstep(-1);
   ASSERT_FLOAT_EQ(controller.getTstep(), 0.1);
 }
