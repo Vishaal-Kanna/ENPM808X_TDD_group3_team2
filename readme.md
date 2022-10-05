@@ -1,5 +1,5 @@
 
-[![Build Status](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2.svg?branch=main)](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2) [![Coverage Status](https://coveralls.io/repos/github/Vishaal-Kanna/ENPM808X_TDD_group3_team2/badge.svg?branch=main)](https://coveralls.io/github/Vishaal-Kanna/ENPM808X_TDD_group3_team2?branch=main)
+[![Build Status](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2.svg?branch=main)](https://app.travis-ci.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2) [![Coverage Status](https://coveralls.io/repos/github/Vishaal-Kanna/ENPM808X_TDD_group3_team2/badge.png?branch=main)](https://coveralls.io/github/Vishaal-Kanna/ENPM808X_TDD_group3_team2?branch=main)
 
 ## Test-Driven Development - Group 3 Team2
 This is a part of the implementation for Test Driven Development. <br /> Teams of two have implemented a stub for the class PID controller to be usd in ACME robot. <br /> The project includes the stub and the test code for making sure the controller is working properly.
