@@ -44,10 +44,15 @@ void pid::PID::setTstep(float val) {
 
 float pid::PID::getTstep()
  {
-    return -1;
+    return _tstep;
  }
 
- double pid::PID::computeCommand(double V_target, double V_current, double total_error)
- {
-   return 3.5;
- }
+double pid::PID::computeCommand(double V_target, double V_current, double total_error) {
+  double error = V_target - V_current;
+
+  double p = _Kp * error;
+  double i = _Ki * total_error * _tstep;
+  double d = _Kd * (error - _prev_error) / _tstep;
+
+  return p + i + d;
+}
