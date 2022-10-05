@@ -5,7 +5,7 @@
 This is a part of the implementation for Test Driven Development. <br /> Teams of two have implemented a stub for the class PID controller to be usd in ACME robot. <br /> The project includes the stub and the test code for making sure the controller is working properly.
 
 ## Author Names
-Driver - Vishaal KannaSivakumar <br />
+Driver - Vishaal Kanna Sivakumar <br />
 Navigator -  Rishabh Singh <br />
 
 ## Author Names Team 1(Part 2)
