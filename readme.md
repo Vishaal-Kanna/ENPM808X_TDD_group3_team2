@@ -10,6 +10,10 @@ This is a part of the implementation for Test Driven Development. <br /> Teams o
 Driver - Vishaal KannaSivakumar <br />
 Navigator -  Rishabh Singh <br />
 
+## Author Names Team 1(Part 2)
+Driver - Sanchit Kedia <br />
+Navigator -  Adarsh Malapaka <br />
+
 ## Standard install via command-line
 git clone https://github.com/Vishaal-Kanna/ENPM808X_TDD_group3_team2.git <br />
 cd <path to repository> <br />
