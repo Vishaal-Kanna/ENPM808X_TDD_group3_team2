@@ -32,15 +32,25 @@ TEST(test1, checking_PID_constants) {
 }
 
 /**
- * @brief Test to check the velocity command computed by the PID class method
- * computeVelocity should return the controller command and not the final velocity.
+ * @brief Test to check the controller command computed by the PID class method
+ * computeCommand should return the controller command and not the final velocity.
  */
 
-TEST(test2, checking_computeVelocity_method) {
+TEST(test2, checking_compute_Controller_Command_method) {
   pid::PID controller;
   controller.setKp(0.4);
   controller.setKd(0.3);
   controller.setKi(0.1);
   controller.setTstep(0.1);
-  ASSERT_DOUBLE_EQ(controller.computeVelocity(50, 0), 175);
+  EXPECT_NEAR(controller.computeCommand(50, 0, 50), 170.5, 0.01);
+}
+
+/**
+ * @brief Test to check if the time step value is assigned to 0.1 if the input 
+ * is lesser than or equal to zero.
+ */
+TEST(test1, checking_Time_step) {
+  pid::PID controller;
+  controller.setTstep(-1);
+  ASSERT_FLOAT_EQ(controller.getTstep(), 0.1);
 }

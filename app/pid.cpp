@@ -40,23 +40,14 @@ double pid::PID::getKi() {
 
 void pid::PID::setTstep(float val) {
     _tstep = val;
-}
+ }
 
-float pid::PID::getTstep() {
-    return _tstep;
-}
+float pid::PID::getTstep()
+ {
+    return -1;
+ }
 
-double pid::PID::computeVelocity(double V_target, double V_current) {
-  double error = V_target - V_current;
-  double previous_error = 0.0;
-  double sum_error = 0.0;
-  double feedback = 0.0;
-
-  error = V_target - V_current;
-  sum_error += error;
-  double p = _Kp * error;
-  double i = _Ki * sum_error * _tstep;
-  double d = _Kd * (error - previous_error) / _tstep;
-  feedback = p + i + d;
-  return feedback;
-}
+ double pid::PID::computeCommand(double V_target, double V_current, double total_error)
+ {
+   return 3.5;
+ }

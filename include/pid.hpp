@@ -93,12 +93,13 @@ class PID {
    * @param V_current
    * @return double
    */
-  double computeVelocity(double V_target, double V_current);
+  double computeCommand(double V_target, double V_current, double total_error);
 
  private:
   double _Kp; ///< Proportional constant
   double _Ki; ///< Derivative constant
   double _Kd; ///< Integral constant
   float _tstep; ///< Time step
+  double _prev_error=0; ///< Integral constant
 };
 }  // namespace pid
